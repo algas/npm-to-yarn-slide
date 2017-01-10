@@ -18,8 +18,8 @@ PLAID エンジニア/HUNTER
 
 ## 概要
 
-- node.js (npm) で依存性解決するには
-- パッケージ管理を shrinkwrap から yarn へ移行した話
+- node.js (npm v3.x) で依存性解決する方法
+- パッケージ管理を shrinkwrap から yarn (v0.18.1) へ移行した話
 
 --
 
@@ -37,7 +37,7 @@ shrinkwrap を捨てて yarn を使いましょう。
 ### 理想
 
 shrinkwrap を使えば node のパッケージのバージョンを  
-指定(固定)できるので依存性問題なんて発生しない(はず)
+固定できるので依存性問題なんて発生しない(はず)
 
 --
 
@@ -68,7 +68,7 @@ package.json の手動更新でパッケージを追加しちゃダメ
 
 --
 
-## Installing packages with npm commands
+## 1.Installing packages with npm commands
 
 ```
 npm install --save new_package
@@ -80,7 +80,7 @@ Not so bad
 
 --
 
-## Installing packages from package.json with npm
+## 2.Installing packages from package.json with npm
 
 ```
 (edit package.json)
@@ -95,7 +95,7 @@ npm ls
 
 --
 
-## Installing packages with yarn commands
+## 3.Installing packages with yarn commands
 
 ```
 yarn add new_package
@@ -106,7 +106,7 @@ OK
 
 --
 
-## Installing packages from package.json with yarn
+## 4.Installing packages from package.json with yarn
 
 ```
 (edit package.json)
